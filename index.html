@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Velo'v App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Bienvenue sur l'app VeloV. Sélectionnez votre borne et réservez votre velo en ligne." />
+        <meta name="author" content="Said LITIM" />
+        <meta name="theme-color" content="#f44336" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">   
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/MarkerCluster.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/MarkerCluster.Default.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="leaflet.css" />
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/leaflet.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="images/icone.png" />
+    </head>
+    <body>
+
+
+        <header id="header">
+            <nav class="topmenu">
+                <img src="images/Logo_Velov.gif" id="logo" alt="logo">
+                <ul>
+                  <li><a href="#carteresa">Carte et Inscription</a></li>
+                  <li><a id="accueil" href="#">Accueil</a></li>   
+              </ul>
+          </nav> 
+        </header>
+
+
+        <div id="wrap">
+
+            <!-- DIAPORAMA -->
+            <section id="cadre">
+                <div id="diapo">
+                    <button id="buttonG"></button>
+                    <div id="centre">
+                        <img src="images/velov1.jpg" id="imgs" class="fade" alt="velov">
+                        <button id="play" class="fas fa-play fa-2x"></button >
+                        <button id="pause" class="far fa-pause-circle fa-2x"></button>
+                        <p id="text">Bienvenue sur l'app Velov!</p>
+                    </div>  
+                    <button id="buttonD"></button>
+                </div>
+            </section>
+
+            <!-- CARTE ET FORMULAIRE DE RESERVATION -->
+
+            <section id="carteresa">
+                <div id="mapid"></div>
+                <div id="reservation">
+                    <p id="detailstation">Détails de la station</p>
+                    <p id="nomStation"></p>
+                    <p id="adressStation"></p>
+                    <p id="ville"></p>
+                    <p id="places"></p>
+                    <p id="veloDispo"></p>
+                    <form id="nomprenomform">
+                        Nom : <input id="nomform" type="text" name="nomform" required="">
+                        Prénom :<input id="prenomform" type="text" name="prenomform"  required="">
+                        <input id="resamap" type="submit" name="resaconfirm" value="Réserver et Signer">
+                        <input id="annulationresa" type="button" name="resannul" value="Annuler">
+                    </form>    
+                </div>    
+            </section>
+
+            <!-- SIGNATURE -->
+
+            <section id="cadreSignature">
+                <canvas id="signature" width=310 height=310>
+                Votre navigateur est obsolète ou   nécéssite une mise à jour
+                </canvas>
+                <button id="reserver">Valider la réservation</button>
+                <button id="effacer">Effacer</button>
+                <button id="annulersign">Annuler</button>
+            </section>
+
+            <!-- MINUTERIE -->
+
+            <footer id="messagetimer">
+                <p><span id="recupnom"></span> <span id="recuprenom"> </span> véloV est disponible  <span id="stationres"></span> </p>
+                <p id="minuterie"><span id="timerm"></span><span id="timers"></span></p>
+            </footer>
+
+        </div>
+<script src="js/leaflet.markercluster.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/canvas.js"></script>
+<script src="js/map.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+      /*--------------GENERALE----------------*/
+body{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px black;
+  
+}
+
+#header{
+  margin: 0;
+  padding: 0;
+  box-shadow: 7px 7px 5px grey;
+}
+
+nav ul li a{
+  padding: 35px  10px 36px 10px;
+    
+}
+
+nav ul li a:hover{
+  color:red;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+button,input,canvas{
+  box-shadow: 5px 5px 5px grey;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  height: 110px;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+
+#buttonD:hover,#buttonG:hover,#play:hover,#pause:hover,#resamap:hover,#annulationresa:hover,#reserver:hover,#effacer:hover,#annulersign:hover{
+  background: rgb(255, 255, 255);
+  color: red;
+  border: 1px solid red;
+}
+
+#wrap{
+  background-color: rgb(245, 244, 244);
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+/* HEADER */
+
+
+.topmenu{
+    
+  overflow: hidden;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+nav ul li{
+  list-style: none;
+  margin-right: 20px;
+  font-family: 'Roboto', sans-serif;
+  display: inline;  
+}
+
+#logo{
+  height: 60%;
+  padding: 10px;
+}  
+
+
+section{
+  width: 100%;
+    
+}
+
+/* Fin HEADER*/
+
+/*Banniere*/
+
+/* SLIDER*/
+
+#imgs{    
+ padding: 20px;
+ width: 40%;
+ height: 60%;
+ margin: auto;
+}
+
+#text{
+  width: 30%;
+  height: 30%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.6em;
+}
+#cadre{
+  width: 100%;
+}
+
+#diapo{
+  display: flex;
+  width: 100%;
+  height: 550px;
+  margin: 0;   
+}
+
+
+.fa-chevron-square-left{
+  color: rgb(0, 0, 0);
+}
+
+#buttonG{
+  background-color: rgba(122, 122, 122, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: -30px;
+  margin-top: 230px;
+}
+
+#buttonD{
+  background-color: rgba(122, 122, 122, 0.5);
+  border: none;
+  width: 40px;
+  height: 70px;
+  border-bottom-left-radius: 180px;
+  border-top-left-radius: 180px;
+  margin-top: 230px;
+  margin-right: 0;
+}
+
+#centre{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color:white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 7px 7px 5px grey;
+}
+
+#play{
+
+  width: 50px;
+  height: 50px;
+  top: 93%;
+  left: 40%;
+  background-color: #f44336; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: auto;
+}
+
+#pause{
+   
+  width: 50px;
+  height: 50px;
+  top: 86%;
+  left: 50%;
+  background-color: #f44336; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: auto;
+}
+
+/*FIN SLIDER*/
+
+/*MAP*/
+
+#mapid { 
+  z-index: 0;
+  height: 380px; 
+}  
+
+#detailstation{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.reservationactive{
+  width: 50%;
+  height: 380px;
+  background-color:white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 7px 7px 5px grey;
+}
+
+.carteresa{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#reservation{
+  display: none;
+}
+
+#resamap,#annulationresa{
+  background-color: #f44336; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: auto;
+  padding: 15px;
+}
+/*Fin Map*/
+
+/*CANVAS Signature*/
+#signature{
+  border: none;
+  background: white;
+  margin : 2% 2%;
+}
+
+
+
+#cadreSignature{
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-content: flex-end;
+}
+
+#reserver,#effacer,#annulersign{
+  background-color: #f44336; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: auto 0.3%;
+  padding: 15px;
+}
+
+/*Fin de la partie Canvas Signature*/
+
+/*message Minuterie*/
+
+#messagetimer{
+  margin: 20px 0;
+  display: none;
+  width: 100%;
+  height: 150px;
+  background-color:white;
+  border-radius: 10px;    
+}
+
+#messagetimer{
+  text-align: center;
+  padding-top: 5%;
+}
+
+
+#messagetimer{
+  font-weight: bold;
+}
+
+#minuterie{
+    color: red;
+}
+
+/*Fin Timer*/
+
+ /*-------------RESPONSIVE--------------*/
+
+@media only screen and (max-device-width: 746px){
+    .carteresa{
+        flex-direction: column;
+        
+    }
+    #mapid{
+        width: 100% !important;
+    }
+    #reservation{
+        width: 100%;
+        height: 520px;
+    }
+    #nomprenomform{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #text{
+        font-size: 22px;
+        width: 250px;
+    }
+
+    #resamap{
+        margin: 20px auto;
+        width: 170px;
+    }
+
+    #signature{
+        margin: 25px auto;
+    }
+
+    nav ul li a{
+        padding: 10px 10px;
+        text-align: center;
+    }
+    #messagetimer {
+        margin: 10px 0 0 0;
+    }
+
+    #imgs{
+      width: 210px;
+      height: 170px;
+    }
+
+    #play{
+      margin-left: 50px;
+    }
+    #reserver,#effacer,#annulersign{
+      margin : auto;
+    }
+
+    #nomform,#prenomform{
+      width: 70%;
+      margin: 0 auto;
+    }
+}
+
