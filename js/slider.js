@@ -38,41 +38,41 @@ class Slider {
 
 	eventslider(){
 
-	////Bouton defilement droite et gauche
-	document.getElementById("buttonG").addEventListener("click", function () {	
-		init1.slider1.mouvementManuel(-1);
-		$(".fade").fadeIn("slow");
-	});
-
-	document.getElementById("buttonD").addEventListener("click", function () {	
-		init1.slider1.mouvementManuel(1);
-		$(".fade").fadeIn("slow");
-	});
-
-	/////////Boutton pause et lecture
-	document.getElementById("pause").addEventListener("click", function () {
-		clearInterval(init1.slider1.auto);	
-	});
-
-	document.getElementById("play").addEventListener("click", function (e) {
-		e.preventDefault();
-		clearInterval(slider1.auto);
-		init1.slider1.auto = setInterval(function () {
-			init1.slider1.mouvementManuel(1);
-		}, 5000);;       
-	});
-
-	// Mouvement de la diapo au clavier. Touches gauche et droite
-	document.addEventListener("keydown", function (e) {
-		switch (e.keyCode) {
-			case 39:
-			init1.slider1.mouvementManuel(1);
-			break
-			case 37:
+		////Bouton defilement droite et gauche
+		document.getElementById("buttonG").addEventListener("click", function () {	
 			init1.slider1.mouvementManuel(-1);
-			break
-		}
-	});
+			$(".fade").fadeIn("slow");
+		});
+
+		document.getElementById("buttonD").addEventListener("click", function () {	
+			init1.slider1.mouvementManuel(1);
+			$(".fade").fadeIn("slow");
+		});
+
+		/////////Boutton pause et lecture
+		document.getElementById("pause").addEventListener("click", function () {
+			clearInterval(init1.slider1.auto);	
+		});
+
+		document.getElementById("play").addEventListener("click", function (e) {
+			e.preventDefault();
+			clearInterval(init1.slider1.auto);
+			init1.slider1.auto = setInterval(function () {
+				init1.slider1.mouvementManuel(1);
+			}, 5000);;       
+		});
+
+		// Mouvement de la diapo au clavier. Touches gauche et droite
+		document.addEventListener("keydown", function (e) {
+			switch (e.keyCode) {
+				case 39:
+				init1.slider1.mouvementManuel(1);
+				break
+				case 37:
+				init1.slider1.mouvementManuel(-1);
+				break
+			}
+		});
 
 	}
 
