@@ -4,7 +4,7 @@ Source de l'application VeloV App . Spécialité : Javascript / "Velov" app Sour
 I made this application during my OpenClassRooms training développeur web Path
 
 # Information
-You can read my présentation 
+You can read my project presentation
 - https://github.com/salitim/VelovProjet3OPC-JS-/blob/master/Projet%203%20Application%20Velo%E2%80%99V.pdf
 
 # Use app
