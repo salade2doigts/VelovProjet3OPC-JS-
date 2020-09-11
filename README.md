@@ -5,7 +5,7 @@ I made this application during my OpenClassRooms training développeur web Path
 
 # Information
 You can read my présentation 
-https://github.com/salitim/VelovProjet3OPC-JS-/blob/master/Projet%203%20Application%20Velo%E2%80%99V.pdf
+- https://github.com/salitim/VelovProjet3OPC-JS-/blob/master/Projet%203%20Application%20Velo%E2%80%99V.pdf
 
 # Use app
 To use application simply clone the repo and open the html index.html file.
